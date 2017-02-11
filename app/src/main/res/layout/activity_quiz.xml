@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- ANDROID IS THE SUPERIOR OS -->
+
+<!--
+
+10 February 2017
+Author: Adhiraj Datar
+ver 1.0-
+
+activity_quiz.xml
+
+XML Layout resource file for quiz activity of IceBreaker -
+IceBreaker is a MDB member trivia quiz designed to allow new members to quickly
+learn more about MDB members from previous semesters.
+
+The quiz activity (homescreen) of icebreaker contains the game (questions+responses)
+and outlines most of the application functionality
+
+possible changes: use a scrollview to make quiz playable on horizontal mode. (OR lock app
+in vertical mode for play)
+Remove quiz activity and replace with quiz fragment (combine 2 current activities)
+implement customview to display all quiz info instead of using separate views for options,
+images, textviews, etc.
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        android:id="@+id/imageView"
+        android:layout_weight="1.0"
+        android:layout_margin="10sp"
+        />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option1"
+        style="@style/buttonStyle"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option2"
+        style="@style/buttonStyle"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option3"
+        style="@style/buttonStyle"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option4"
+        style="@style/buttonStyle"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreView"
+        android:gravity="center"
+        style="@style/textViewStyle"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countdown"
+        android:gravity="center"
+        style="@style/textViewStyle"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:id="@+id/returnButton"
+        style="@style/buttonStyle"
+        android:layout_marginBottom="10sp"/>
+
+</LinearLayout>
+
+    <!-- ANDROID IS THE SUPERIOR OS -->
