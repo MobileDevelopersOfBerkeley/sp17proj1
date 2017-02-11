@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- ANDROID IS THE SUPERIOR OS -->
+
+<!--
+
+10 February 2017
+Author: Adhiraj Datar
+ver 1.0-
+
+activity_main.xml
+
+XML Layout resource file for main activity of IceBreaker -
+IceBreaker is a MDB member trivia quiz designed to allow new members to quickly
+learn more about MDB members from previous semesters.
+
+The main activity (homescreen) of icebreaker contains static instructions and
+a button to start the quiz along with basic app settings.
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+
+    <TextView
+        android:text="IceBreaker - Get to Know MDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        style="@style/textViewStyle"
+        android:gravity="center"
+        android:padding="10sp"/>
+
+    <TextView
+        android:text="Instructions\n ver1.0\n\n Match the MDB member to the picture in 5 seconds. Not sure who's who? Enable cheat mode to learn.\n\n Click on a member portrait to add them as a contact on your phone\n\n Press return to navigate back to this screen anytime."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        style="@style/textViewStyle"
+        android:gravity="center"
+        />
+
+    <Button
+        android:text="Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        style="@style/buttonStyle"
+        />
+
+    <CheckBox
+        android:text="Enable Cheats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:backgroundTint="@color/buttonColor"
+        android:buttonTint="@color/buttonColor"/>
+</LinearLayout>
+
+    <!-- ANDROID IS THE SUPERIOR OS -->
