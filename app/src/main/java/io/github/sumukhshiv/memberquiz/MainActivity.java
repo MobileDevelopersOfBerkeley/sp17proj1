@@ -13,12 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        //Start Button to begin the game
-        Button button = (Button) findViewById(R.id.buttonStart);
-
         //Go to the Game Activity once you press start
-        button.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonStart).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), GameActivity.class);
